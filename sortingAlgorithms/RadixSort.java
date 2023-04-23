@@ -1,5 +1,12 @@
 import java.util.Arrays;
 
+/**
+* Best time complexity: All elements have the same number of digits.
+* Average case time Complexity: O(d * (n + b)) - b is base (e.g 10 for decimal digits, 2 for binary),  n is number of elements to be sorted, d is 
+* the number of digits in the maximum number.
+* Worst case time complexity: O (logb (mx)(n + b)) - only one element which has significantly large number of digits.
+* Space Complexity: O (n + b)
+*/
 public class RadixSort {
     public static void main(String[] args) {
         int[] arr = { 170, 45, 75, 90, 802, 24, 2, 66 };
